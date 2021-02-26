@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <title>game</title>
+    </head>
+    <body>
+        <div class="score">Your Score: <b id="count">0</b></div>
+        <div class="score">Best: <b id="best"></b></div>
+        <button id="reset" onclick="init()">reset</button>
+        <article class="center">
+            <div id="hp">health: <span id="bar"></span></div>
+            <div id="screen"></div>
+            <input id="text">
+            <button id="submit" onclick="submit()">submit</button>
+        </article>
+        <section id="popup">
+            <div id="layer"></div>
+                <div id="container">
+                    <div id="message">Game Over!</div>
+                    <button id="retry" onclick="location.reload();">Retry</button>
+                </div>
+        </section>
+        <script src="main.js"></script>
+    </body>
+</html>
